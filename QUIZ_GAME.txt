@@ -1,0 +1,118 @@
+#user-input..............
+user_input  = input('Enter the user-preferance:')
+user_input = user_input.lower()
+if user_input== 'yes':
+    print('start the Game.....')
+    print('All the best for your quiz game dear.....')
+    print('''This is the Quiz game /n
+             if your answer is Right than score is incrament By 1/n
+             But if your false answer than your score is decrase by 0.5.''' )
+else:
+    print('sorry ,for waste your time ')
+    break
+    
+#intialise of the score variable
+    
+score = 0
+
+#question for quiz game
+q_1 = print('what is the capital of America:')
+
+print('1. canbera')
+print('2. macau')
+print('3. delhi')
+print('4. newyork')
+
+choice= input('Enter the choice which numbr do you choose: ')
+
+
+if choice == '1':
+    print('you , re incorrect')
+    score1= score-0.5
+    print(score1)
+  
+if choice == '2':
+    print('you , re incorrect')
+    score1= score-0.5
+    print(score1)
+    
+if choice == '3':
+    print('you , re incorrect')
+    score1= score-0.5
+    print(score1)
+    
+if choice == '4':
+    print('you , re correct')
+    score1= score+1
+    print(score1)
+    
+
+
+
+q_2 = print('what is the capital of Australia:')
+
+print('1. canbera')
+print('2. macau')
+print('3. delhi')
+print('4. newyork')
+
+choice= input('Enter the choice which numbr do you choose: ')
+
+if choice == '1':
+    print('you ,re correct')
+    score2= score1+1
+    print(score2)
+  
+if choice == '2':
+    print('you , re incorrect')
+    score2= score1-0.5
+    print(score2)
+    
+if choice == '3':
+    print('you , re incorrect')
+    score2= score1-0.5
+    print(score2)
+    
+if choice == '4':
+    print('you , re incorrect')
+    score2= score1-0.5
+    print(score2)
+
+
+
+        
+q_3 =print('what is the capital of india: ')
+
+
+print('1. canbera')
+print('2. macau')
+print('3. delhi')
+print('4. newyork')
+
+choice= input('Enter the choice which numbr do you choose: ')
+
+if choice == '1':
+    print('you ,re correct')
+    score3= score2-0.5
+    print(score3)
+  
+if choice == '2':
+    print('you , re incorrect')
+    score3= score2-0.5
+    print(score3)
+    
+if choice == '3':
+    print('you , re incorrect')
+    score3= score2+1
+    print(score3)
+    
+if choice == '4':
+    print('you , re incorrect')
+    score3= score2-0.5
+    print(score3)
+    
+#Final Score
+Final_score =score1+score2+score3
+
+#print the final-score
+print('you,re Complete the game ,your final score is :', Final_score)
